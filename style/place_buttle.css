@@ -1,0 +1,31 @@
+.placebuttle {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.placebuttle__table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20vh;
+    grid-gap: 35px;
+    justify-items: center;
+    align-content: center;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.placebuttle__table .card {
+    animation: show 200ms ease-in-out;
+}
+
